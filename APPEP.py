@@ -4,15 +4,9 @@ import pandas as pd
 import pickle 
 import pickle
 from pickle import dump
-import numpy as np
-import streamlit_authenticator as stauth
-from yaml.loader import SafeLoader
-import yaml
 import streamlit as st
-from yaml.loader import SafeLoader
-import streamlit.components.v1 as components
-import hasher as Hasher
-from streamlit_authenticator import Authenticate
+
+
   
 def run():
 
