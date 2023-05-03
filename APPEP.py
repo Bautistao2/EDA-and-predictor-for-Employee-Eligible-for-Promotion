@@ -41,7 +41,7 @@ def run():
         st.write('A continuación deberá ingresar la información de su empleado')
         department1 = st.number_input('Seleccione el departamento en donde trabaja, 0.Analitics, 1.Finanzas, 2.HR, 3.Legal, 4.Operaciones, 5.Compra, 6.RyD, 7.VentasYMarketing, 8.tecnologia', min_value=0, max_value=8, value=0)
         Edad = st.number_input('Ingrese la edad', min_value=1, max_value=100, value=25)
-        sexo = st.number_input('Para Genero Femenino puse 0, para masculino 1', min_value=0, max_value=1, value=0)
+        sexo = st.number_input('Si Genero Femenino puse 0, para masculino 1', min_value=0, max_value=1, value=0)
         educacion = st.slider('El nivel de educacion. 0.Bachiller, 1.Especialista, 2.Magister', 0,2,1)
         reclutamiento = st.slider('El medio del reclutamiento fue: 2.Sourcing, 1.Referido, 0.Otro', 0,2,1)
         numerodeentrenamientos = st.selectbox('No de entreamientos posteriores', [0,1,2,3,4,5])
