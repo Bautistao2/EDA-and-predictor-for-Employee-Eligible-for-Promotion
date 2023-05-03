@@ -5,8 +5,6 @@ import pickle
 import pickle
 from pickle import dump
 import numpy as np
-import sklearn
-from sklearn.ensemble import RandomForestClassifier
 import streamlit_authenticator as stauth
 from yaml.loader import SafeLoader
 import yaml
