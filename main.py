@@ -31,7 +31,7 @@ def run():
     if add_selectbox == 'En linea':
         
         st.write('A continuación deberá ingresar la información de su empleado')
-        department1 = st.number_input('Seleccione el departamento en donde trabaja, 0.Analitics, 1.Finanzas, 2.HR, 3.Legal, 4.Operaciones, 5.Compra, 6.RyD, 7.VentasYMarketing, 8.tecnologia', min_value=0, max_value=8, value=0)
+        department1 = st.slider('Seleccione el departamento en donde trabaja, 0.Analitics, 1.Finanzas, 2.HR, 3.Legal, 4.Operaciones, 5.Compra, 6.RyD, 7.VentasYMarketing, 8.tecnologia', 0,8,1)
         Edad = st.number_input('Ingrese la edad', min_value=1, max_value=100, value=25)
         sexo = st.number_input('Genero 0. Mujer, 1. Hombre', min_value=0, max_value=1, value=0)
         educacion = st.slider('El nivel de educacion. 0.Bachiller, 1.Especialista, 2.Magister', 0,2,1)
