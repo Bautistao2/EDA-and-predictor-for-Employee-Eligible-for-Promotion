@@ -11,7 +11,7 @@ import streamlit.components.v1 as components
 
   
 def run():
-
+    #IMPORTO IMAGENES QUE SERAN VISIBLES EN EL APP
     from PIL import Image
     imagen1 = Image.open('hrana.png')
     imagen2 = Image.open('hr2.jpg')
@@ -19,6 +19,7 @@ def run():
 
     st.image(imagen2,use_column_width=False)
 
+    #AÑADO UN SELETBOX PARA QUE EL USUARIO ELIGA ENTRE GRAFICAR O HACER LA PREDICCION
     add_selectbox = st.sidebar.selectbox(
     "Escoge una opción",
     ("Realizar la predicción", "Ir a gráficos"))
@@ -30,7 +31,7 @@ def run():
 
     st.title("PEAPP, Promoción Efectiva para sus empleados")
     
-
+    #SI EL USUARIO ELIGE REALIZAR LA PREDICCION, AQUÍ SE RECOGEN LAS VARIABLES
     if add_selectbox == 'Realizar la predicción':
         
         st.write('A continuación deberá ingresar la información de su empleado')
@@ -70,14 +71,14 @@ def run():
 
         output=""
         
-         
+      #CREO UNA LISTA CON TODAS LAS VARIABLES O INFO RECOGIDAS  ANTERIORMENTE POR EL USUARIO , DEL EMPLEADO
         input_dict = [department1 , region , educacion,  sexo, reclutamiento,  numerodeentrenamientos,  Edad,  Entrenamientos_previos,  servicio,  KIPs_met,  awards_won ,  Avg_training_score]
         
         
         
-
+       #REALIZO LA PREDICCIÓN
         if st.button("Predecir"):
-            
+            #LLAMO AL ARCHIVO .PKL, 
             nombreArchivo = 'modelohr.pkl'
             modeloCargado = pickle.load(open('modelohr.pkl', 'rb'))
             prediccion = modeloCargado.predict([input_dict])
@@ -88,9 +89,10 @@ def run():
             st.write('llamar al empleado para comunicarselo')     
                  
               
-
+    #SI EL USUARIO HA ESCOGIDO LA OPCION DE IR A GRAFICOS, SE AÑADE LA LIBRERIA QUE PERMITE REALIZAR GRAFICOS
+    #CON LA INFO DEL DATASET
     if add_selectbox == 'Ir a gráficos':
-        
+       #VISUALIZO EL DATASET, PRIMERO, LUEGO REALIZO GRAFICOS 
        df = pd.read_csv("hrdatatest.csv")
        st.dataframe(df, height=300)
        pyg_html = pyg.walk(df, return_html=True)
