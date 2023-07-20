@@ -1,10 +1,12 @@
 
+from msilib.schema import Component
 import streamlit as st
 import pandas as pd
 import pickle 
 import pickle
 from pickle import dump
-
+import pygwalker as pyg
+import streamlit.components.v1 as components
 
 
   
@@ -18,25 +20,33 @@ def run():
     st.image(imagen2,use_column_width=False)
 
     add_selectbox = st.sidebar.selectbox(
-    "Cómo te gustaría ingresar la información?",
-    ("En linea", "subir un archivo"))
+    "Escoge una opción",
+    ("Realizar la predicción", "Ir a gráficos"))
 
-    st.sidebar.info('Apreciado usuario, elija la manera en la que desea introducir la información del empleado, tenga en cuenta que si elige batch tendrá que subir un archivo de formato csv cuyos datos deben ser acordes a la numeración utilizada en la app al ingresar de manera manual la información del empleado (numerica).')
+    st.sidebar.info('Apreciado usuario, puede saber si un empleado será promovido, o hacer graficos')
     st.sidebar.success('Para soporte técnico, contacte con nosotros https://www.apersonal.com')
     
     st.sidebar.image(imagen1)
 
     st.title("PEAPP, Promoción Efectiva para sus empleados")
+    
 
-    if add_selectbox == 'En linea':
+    if add_selectbox == 'Realizar la predicción':
         
         st.write('A continuación deberá ingresar la información de su empleado')
         department1 = st.slider('Seleccione el departamento en donde trabaja, 0.Analitics, 1.Finanzas, 2.HR, 3.Legal, 4.Operaciones, 5.Compra, 6.RyD, 7.VentasYMarketing, 8.tecnologia', 0,8,1)
         Edad = st.number_input('Ingrese la edad', min_value=1, max_value=100, value=25)
-        sexo = st.number_input('Genero 0. Mujer, 1. Hombre', min_value=0, max_value=1, value=0)
+        st.write('Seleccione el sexo del empleado')
+        mujer =  st.checkbox ("Mujer")
+        hombre =  st.checkbox ("Hombre")
+        if mujer :
+            sexo = 0
+        else :
+            sexo = 1     
+                   
         educacion = st.slider('El nivel de educacion. 0.Bachiller, 1.Especialista, 2.Magister', 0,2,1)
         reclutamiento = st.slider('El medio del reclutamiento fue: 2.Sourcing, 1.Referido, 0.Otro', 0,2,1)
-        numerodeentrenamientos = st.selectbox('No de entreamientos posteriores', [0,1,2,3,4,5])
+        numerodeentrenamientos = st.selectbox('No de entrenamientos posteriores', [0,1,2,3,4,5])
         Entrenamientos_previos = st.selectbox('Puntuacion del entrenamiento pasado', [0,1,2,3,4,5])
         servicio = st.number_input('Años que lleva en la empresa', min_value=1, max_value=37, value=25)
         
@@ -75,18 +85,18 @@ def run():
                 st.write('El empleado no será promovido')
             else:
                  st.write('El empleado será promovido')
+            st.write('llamar al empleado para comunicarselo')     
                  
               
 
-    if add_selectbox == 'Batch':
-
-        file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
-
-        if file_upload is not None:
-            data = pd.read_csv(file_upload)
-            predicciones = pickle.load(open('modelohr.pkl', 'rb'))
-            resultado = predicciones.predict([data])
-            st.write(resultado)
+    if add_selectbox == 'Ir a gráficos':
+        
+       df = pd.read_csv("hrdatatest.csv")
+       st.dataframe(df, height=300)
+       pyg_html = pyg.walk(df, return_html=True)
+       components.html(pyg_html, height=1000, scrolling=True)
+       
+        
         
 if __name__ == '__main__':
     run() 
