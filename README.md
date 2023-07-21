@@ -8,18 +8,20 @@ la información que se debe introducir en el app es_
 
 1. El departamento en el que trabaja el empleado
 2. la edad del empleado
-3. el genero del empleado 
-4. el nivel de educacion
+3. el sexo del empleado 
+4. el nivel de educación
 5. Medio de reclutamiento del empleado
-6. Numero de entrenamientos
-7. Puntuación del ultimo entrenamiento
+6. Numero de intentos de promoción 
+7. Calificación del empleado en el último año
 8. Hace cuantos años trabaja en la compañia
-9. si Posee KPI mayor a 80
+9. si Posee KPI mayor a 80%
 10. si ha ganado algun premio en la compañia
-11. Puntuación media del entrenamiento
+11. Puntuación media de las evaluaciones de formación actual
 12. la region a la que pertenece el empleado
 
 Luego de ingresar toda la información, se indicará si el empleado será promovido o nO.
+
+Adicional el usuario, podrá escoger la opcion de visualizar datos, en donde podrá realizar diferentes tipos de gráficos para analizar la informacion del dataset, o registros de datos.
 
 
 
