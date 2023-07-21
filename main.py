@@ -35,7 +35,7 @@ def run():
     if add_selectbox == 'Realizar la predicción':
         
         st.write('A continuación deberá ingresar la información de su empleado')
-        department1 = st.slider('Seleccione el departamento en donde trabaja, 0.Analitics, 1.Finanzas, 2.HR, 3.Legal, 4.Operaciones, 5.Compra, 6.RyD, 7.VentasYMarketing, 8.tecnologia', 0,8,1)
+        department1 = st.slider('Seleccione el departamento en donde trabaja, 0.Analitics, 1.Finanzas, 2.HR, 3.Legal, 4.Operaciones, 5.Compra, 6.RyD, 7.VentasYMarketing, 8.tecnología', 0,8,1)
         Edad = st.number_input('Ingrese la edad', min_value=1, max_value=100, value=25)
         st.write('Seleccione el sexo del empleado')
         mujer =  st.checkbox ("Mujer")
@@ -47,24 +47,24 @@ def run():
                    
         educacion = st.slider('El nivel de educacion. 0.Bachiller, 1.Especialista, 2.Magister', 0,2,1)
         reclutamiento = st.slider('El medio del reclutamiento fue: 2.Sourcing, 1.Referido, 0.Otro', 0,2,1)
-        numerodeentrenamientos = st.selectbox('No de entrenamientos posteriores', [0,1,2,3,4,5])
-        Entrenamientos_previos = st.selectbox('Puntuacion del entrenamiento pasado', [0,1,2,3,4,5])
+        numerodeentrenamientos = st.selectbox('No de intentos de promoción', [0,1,2,3,4,5])
+        Entrenamientos_previos = st.selectbox('Calificación del empleado en el ultimo año', [0,1,2,3,4,5])
         servicio = st.number_input('Años que lleva en la empresa', min_value=1, max_value=37, value=25)
         
-        if st.checkbox('Posee KIPS>80%? '):
+        if st.checkbox('Posee KPIS>80%? '):
             KIPs_met = 0
                
         else:
             KIPs_met = 1
                 
         
-        if st.checkbox('Ha ganado algún premio?'):
+        if st.checkbox('Ha ganado algún premio en el último año?'):
             awards_won = 0
         else:
             awards_won = 1
             
                    
-        Avg_training_score = st.number_input('Promedio de puntuaciones entrenamientos pasados', min_value=1, max_value=100, value=25)
+        Avg_training_score = st.number_input('Puntuación media de las evaluaciones de formación actuales', min_value=1, max_value=100, value=25)
     
         
         region = st.number_input('Region en donde está el empleado', min_value=1, max_value=35, value=25)
