@@ -21,7 +21,7 @@ la información que se debe introducir en el app es_
 
 Luego de ingresar toda la información, se indicará si el empleado será promovido o nO.
 
-Adicional el usuario, podrá escoger la opcion de visualizar datos, en donde podrá realizar diferentes tipos de gráficos para analizar la informacion del dataset, o registros de datos.
+Adicional el usuario, podrá escoger la opcion de visualizar datos, en donde podrá realizar diferentes tipos de gráficos para analizar la informacion del dataset, o registros de datos
 
 
 
