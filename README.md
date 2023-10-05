@@ -16,20 +16,20 @@ At the end of the program, based on various factors such as training performance
 -They have provided multiple attributes around Employee's past and current performance along with demographics. Now, The task is to predict whether a potential promotee at checkpoint in the test set will be promoted or not after the evaluation process.
 
 
-**Employee_id** Unique ID for employee
-**Department** Department of employee
-**Region** Region of employment (unordered)
-**Education** Education Level
-**Gender** Gender of Employee
-**Recruitment_channel** Channel of recruitment for employee
-**No_of_trainings** no of other trainings completed in previous year on soft skills, technical skills etc.
-**Age** Age of Employee
-**Previous_year_rating** Employee Rating for the previous year
-**Length_of_service** Length of service in years
-**KPIs_met >80%** if Percent of KPIs(Key performance Indicators) >80% then 1 else 0
-**Awards_won?** if awards won during previous year then 1 else 0
-**Avg_training_score** Average score in current training evaluations
-**Is_promoted** (Target) for promotion
+- **Employee_id:** Unique ID for employee
+- **Department:** Department of employee
+- **Region:** Region of employment (unordered)
+- **Education:** Education Level
+- **Gender:** Gender of Employee
+- **Recruitment_channel:** Channel of recruitment for employee
+- **No_of_trainings:** no of other trainings completed in previous year on soft skills, technical skills etc.
+- **Age:** Age of Employee
+- **Previous_year_rating:** Employee Rating for the previous year
+- **Length_of_service:** Length of service in years
+- **KPIs_met >80%:** if Percent of KPIs(Key performance Indicators) >80% then 1 else 0
+- **Awards_won?:** if awards won during previous year then 1 else 0
+- **Avg_training_score:** Average score in current training evaluations
+- **Is_promoted:** (Target) for promotion
 
 
 
