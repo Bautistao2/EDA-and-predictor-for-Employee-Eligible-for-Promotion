@@ -1,7 +1,7 @@
-# Potencial Promote Employee PPE 
+# Potencial Promote Employee  APP (P.P.E)
 
 
-HR analytics is revolutionising the way human resources departments operate, leading to higher efficiency and better results overall. Human resources has been using analytics for years. However, the collection, processing and analysis of data has been largely manual, and given the nature of human resources dynamics and HR KPIs, the approach has been constraining HR. Therefore, it is surprising that HR departments woke up to the utility of machine learning so late in the game. Here is an opportunity to try predictive analytics in identifying the employees most likely to get promoted.
+HR analytics is revolutionising the way human resources departments operate, leading to higher efficiency and better results overall. Human resources has been using analytics for years. However, the collection, processing and analysis of data has been largely manual, and given the nature of human resources dynamics and HR KPIs, the approach has been constraining HR. Therefore, it is surprising that HR departments woke up to the utility of machine learning so late in the game. Here is an opportunity to try predictive analytics in identifying the employees most likely to get promoted through the use of an app that, by entering some information, predicts whether an employee will be promoted or not.
 
 ## Description
 
@@ -14,7 +14,6 @@ At the end of the program, based on various factors such as training performance
 -For above mentioned process, the final promotions are only announced after the evaluation and this leads to delay in transition to their new roles. Hence, company needs your help in identifying the eligible candidates at a particular checkpoint so that they can expedite the entire promotion cycle.
 
 -They have provided multiple attributes around Employee's past and current performance along with demographics. Now, The task is to predict whether a potential promotee at checkpoint in the test set will be promoted or not after the evaluation process.
-
 
 - **Employee_id:** Unique ID for employee
 - **Department:** Department of employee
@@ -30,6 +29,12 @@ At the end of the program, based on various factors such as training performance
 - **Awards_won?:** if awards won during previous year then 1 else 0
 - **Avg_training_score:** Average score in current training evaluations
 - **Is_promoted:** (Target) for promotion
+## Code and Resources Used
+
+Python Version: 3.7 Packages: pandas, numpy, datetime, scipy, sklearn, matplotlib, seaborn
+
+## 1. Data cleaning and feature engineering:
+
 
 
 
