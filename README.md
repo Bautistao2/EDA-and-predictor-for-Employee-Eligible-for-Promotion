@@ -46,7 +46,7 @@ Python Version: 3.8 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 ## 2. Exploratory Data Analysis:
 
 **Solving the following questions**
-## What percentage of employees have been promoted?
+### What percentage of employees have been promoted?
 
 !["only 8% of workers have been promoted"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
 
