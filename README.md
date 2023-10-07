@@ -53,21 +53,21 @@ Python Version: 3.7 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 **Solving the following questions**
 ## What percentage of employees have been promoted?
 
-![only 8% of workers have been promoted](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
+!["only 8% of workers have been promoted"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
 
 ### Are promoted employees equally gendered?
-![No, more men have been promoted than women](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/gender%20and%20promotee.png)
+!["No, more men have been promoted than women"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/gender%20and%20promotee.png)
 
-![Althought the number of trained female employees that passes is greater than that of men, this means that from a group of women and men, promotion in women is more effective.](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/ratio%20of%20promoted%20by%20gender.png)
+!["Althought the number of trained female employees that passes is greater than that of men, this means that from a group of women and men, promotion in women is more effective."](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/ratio%20of%20promoted%20by%20gender.png)
 
 ### Regarding recruitment channels, which channel provides the greatest number of promoted employees?
 
-![Source "Other" provides a greater number of promoted employees](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/RecruitmentChannelvsPromotee.png)
+!["Source "Other" provides a greater number of promoted employees"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/RecruitmentChannelvsPromotee.png)
 
 
 ### Does the age of promoted employees have the same trend for both men and women?
 
-![Employees between 26 and 39 are more likely to be promoted than other ages, both men and women](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Ageandpromoted.png)
+!["Employees between 26 and 39 are more likely to be promoted than other ages, both men and women"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Ageandpromoted.png)
 
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Age2.png)
 
@@ -75,16 +75,45 @@ Python Version: 3.7 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 
 ### Is there a correlation between the number of missed training sessions and employee promotion?
 
-![Yes, employees with only 1 or 2 missed training sessions are mostly promoted](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/No%20of%20training%202.png)
+!["Yes, employees with only 1 or 2 missed training sessions are mostly promoted"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/No%20of%20training%202.png)
 
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/No_of_trainings.png)
 
 ### Is there a correlation between the employee's current performance score and the promotion?
-![Yes, employees with performance scores of 3 and 5 are mostly promoted](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore1.png)
+!["Yes, employees with performance scores of 3 and 5 are mostly promoted"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore1.png)
 
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore2.png)
 
+![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore3.png)
+
 ## 3. Build and training prediction model
+
+
+
+I made the prediction model to know which employee will be promoted,, based on features of the employee, after having analyzed the data and the confusion matrix.
+
+![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Matrix_Confusion.png)
+
+
+To do this I follow the usual steps:
+
+### Data preprocessing 
+
+- Select most important columns to make the model prediction
+- Apply get dummies to the categorical columns selected
+- Termd is the target vector to the prediction model
+- Made a balanced dataset by using SMOTE technique.
+- Columns scaling was done
+- Data scaling
+### Build a model
+- Exploring model performance of different ML regression algorithms
+- The most promising algorithm () was adjusted.
+- The characteristics that have the greatest impact on the prediction were calculated.
+
+### Training a Model
+
+![]()
+
 
 
 
