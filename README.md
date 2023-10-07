@@ -1,12 +1,7 @@
 # Potencial Promote Employee  APP (P.P.E)
 
 
-HR analytics is revolutionising the way human resources departments operate, leading to higher efficiency and better results overall. Human resources has been using analytics for years. However, the collection, processing and analysis of data has been largely manual, and given the nature of human resources dynamics and HR KPIs, the approach has been constraining HR. Therefore, it is surprising that HR departments woke up to the utility of machine learning so late in the game. Here is an opportunity to try predictive analytics in identifying the employees most likely to get promoted through the use of an app that, by entering some information, predicts whether an employee will be promoted or not.
-
-
-## Goal
-
-Build model to predict eligibility for an employee to be promoted or not
+HR analytics is revolutionising the way human resources departments operate, leading to higher efficiency and better results overall. Human resources has been using analytics for years. However, the collection, processing and analysis of data has been largely manual, and given the nature of human resources dynamics and HR KPIs, the approach has been constraining HR. Therefore, it is surprising that HR departments woke up to the utility of machine learning so late in the game. Here is an opportunity to try predictive analytics in identifying the employees most likely to get promoted through the use of an APP that, by entering some information, predicts whether an employee will be promoted or not.
 
 ## Description
 
@@ -36,7 +31,7 @@ At the end of the program, based on various factors such as training performance
 - **Is_promoted:** (Target) for promotion
 ## Code and Resources Used
 
-Python Version: 3.7 Packages: pandas, numpy, datetime, scipy, sklearn, matplotlib, seaborn
+Python Version: 3.8 Packages: pandas, numpy, datetime, scipy, sklearn, matplotlib, seaborn
 
 ## 1. Data cleaning and feature engineering:
 
@@ -87,8 +82,6 @@ Python Version: 3.7 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore3.png)
 
 ## 3. Build and training prediction model
-
-
 
 I made the prediction model to know which employee will be promoted,, based on features of the employee, after having analyzed the data and the confusion matrix.
 
