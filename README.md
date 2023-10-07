@@ -54,9 +54,11 @@ Python Version: 3.7 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 
 ## What percentage of employees have been promoted?
 
-![x]
+![only 8% of workers have been promoted](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
+
 ### Are promoted employees equally gendered?
 
+![No, more men have been promoted than women]
 
 
 
