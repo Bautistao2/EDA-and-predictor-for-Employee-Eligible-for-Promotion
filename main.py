@@ -13,8 +13,8 @@ import streamlit.components.v1 as components
 def run():
     #IMPORTO IMAGENES QUE SERAN VISIBLES EN EL APP
     from PIL import Image
-    imagen1 = Image.open('hrana.png')
-    imagen2 = Image.open('hr2.jpg')
+    imagen1 = Image.open('./images/hrana.png')
+    imagen2 = Image.open('./images/hr2.jpg')
     imagen2 = imagen2.resize((650,200))
 
     st.image(imagen2,use_column_width=False)
@@ -25,8 +25,7 @@ def run():
     ("Realizar la predicción", "Ir a gráficos"))
 
     st.sidebar.info('Apreciado usuario, puede saber si un empleado será promovido, o hacer graficos')
-    st.sidebar.success('Para soporte técnico, contacte con nosotros https://www.apersonal.com')
-    
+        
     st.sidebar.image(imagen1)
 
     st.title("PEAPP, Promoción Efectiva para sus empleados")
@@ -75,11 +74,10 @@ def run():
         input_dict = [department1 , region , educacion,  sexo, reclutamiento,  numerodeentrenamientos,  Edad,  Entrenamientos_previos,  servicio,  KIPs_met,  awards_won ,  Avg_training_score]
         
         
-        
        #REALIZO LA PREDICCIÓN
         if st.button("Predecir"):
             #LLAMO AL ARCHIVO .PKL, 
-            nombreArchivo = 'modelohr.pkl'
+            nombreArchivo = 'ModelodePrediccion1.pkl'
             modeloCargado = pickle.load(open('modelohr.pkl', 'rb'))
             prediccion = modeloCargado.predict([input_dict])
             if  prediccion == 0:
