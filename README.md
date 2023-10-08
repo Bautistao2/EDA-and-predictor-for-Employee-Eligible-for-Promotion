@@ -132,7 +132,12 @@ To do this I follow the usual steps:
 - In addition, it has a section [2] that contains a link that leads to the application development company, in order to offer technical support if necessary.
 - On the left side [3] is where the option that the user has chosen to perform is executed.
 
+### 6. Dashboard POWER BI
 
+![](https://github.com/Bautistao2/Potential-employee-promoted-Predictor-EDA-and-APP/blob/main/images/Screen%20Dashboard%20Power%20BI.png)
+
+
+<iframe title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmMyMDljZWMtYmRhYy00NGE4LWEyODctZGY1NDYyYjRmMDA1IiwidCI6IjMzNTQwNzQ2LTViYmMtNDRlOS04MDBmLTRjOGQ1MTJkNjQ1YyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 
