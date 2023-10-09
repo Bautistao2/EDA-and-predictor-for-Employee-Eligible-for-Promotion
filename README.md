@@ -53,16 +53,16 @@ Only 8% of workers have been promoted ![](https://github.com/Bautistao2/Potentia
 ### Are promoted employees equally gendered?
 No, more men have been promoted than women ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/gender%20and%20promotee.png)
 
-!["Althought the number of trained female employees that passes is greater than that of men, this means that from a group of women and men, promotion in women is more effective."](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/ratio%20of%20promoted%20by%20gender.png)
+Althought the number of trained female employees that passes is greater than that of men, this means that from a group of women and men, promotion in women is more effective.![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/ratio%20of%20promoted%20by%20gender.png)
 
 ### Regarding recruitment channels, which channel provides the greatest number of promoted employees?
 
-!["Source "Other" provides a greater number of promoted employees"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/RecruitmentChannelvsPromotee.png)
+Source "Other" provides a greater number of promoted employees.![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/RecruitmentChannelvsPromotee.png)
 
 
 ### Does the age of promoted employees have the same trend for both men and women?
 
-!["Employees between 26 and 39 are more likely to be promoted than other ages, both men and women"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Ageandpromoted.png)
+Employees between 26 and 39 are more likely to be promoted than other ages, both men and women.![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Ageandpromoted.png)
 
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Age2.png)
 
@@ -70,12 +70,12 @@ No, more men have been promoted than women ![](https://github.com/Bautistao2/Pot
 
 ### Is there a correlation between the number of missed training sessions and employee promotion?
 
-!["Yes, employees with only 1 or 2 missed training sessions are mostly promoted"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/No%20of%20training%202.png)
+Yes, employees with only 1 or 2 missed training sessions are mostly promoted.![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/No%20of%20training%202.png)
 
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/No_of_trainings.png)
 
 ### Is there a correlation between the employee's current performance score and the promotion?
-!["Yes, employees with performance scores of 3 and 5 are mostly promoted"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore1.png)
+Yes, employees with performance scores of 3 and 5 are mostly promoted.![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore1.png)
 
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore2.png)
 
@@ -134,9 +134,9 @@ To do this I follow the usual steps:
 
 ### 6. Dashboard POWER BI
 
+[To view click ](https://app.powerbi.com/view?r=eyJrIjoiNmMyMDljZWMtYmRhYy00NGE4LWEyODctZGY1NDYyYjRmMDA1IiwidCI6IjMzNTQwNzQ2LTViYmMtNDRlOS04MDBmLTRjOGQ1MTJkNjQ1YyIsImMiOjl9)
 ![](https://github.com/Bautistao2/Potential-employee-promoted-Predictor-EDA-and-APP/blob/main/images/Screen%20Dashboard%20Power%20BI.png)
 
-[To view click ](https://app.powerbi.com/view?r=eyJrIjoiNmMyMDljZWMtYmRhYy00NGE4LWEyODctZGY1NDYyYjRmMDA1IiwidCI6IjMzNTQwNzQ2LTViYmMtNDRlOS04MDBmLTRjOGQ1MTJkNjQ1YyIsImMiOjl9)
 
 
 
