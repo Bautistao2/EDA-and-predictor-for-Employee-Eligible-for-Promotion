@@ -3,7 +3,6 @@ import pandas as pd
 import pickle 
 import pickle
 from pickle import dump
-import pygwalker as pyg
 import streamlit.components.v1 as components
 from sklearn.ensemble import RandomForestClassifier
 
