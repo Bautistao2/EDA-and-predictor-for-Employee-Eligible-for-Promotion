@@ -75,10 +75,7 @@ Yes, employees with performance scores of 3 and 5 are mostly promoted.![](https:
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore3.png)
 ## 3. Build and training prediction model
 I made the prediction model to know which employee will be promoted,, based on features of the employee, after having analyzed the data and the confusion matrix.
-
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Matrix_Confusion.png)
-
-To do this I follow the usual steps:
 ### Data preprocessing 
 
 - Change categorical variables to numerical variables
