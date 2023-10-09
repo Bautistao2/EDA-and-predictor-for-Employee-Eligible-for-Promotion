@@ -1,4 +1,3 @@
-from msilib.schema import Component
 import streamlit as st
 import pandas as pd
 import pickle 
@@ -92,9 +91,7 @@ def run():
     if add_selectbox == 'Ir a gráficos':
        #VISUALIZO EL DATASET, PRIMERO, LUEGO REALIZO GRAFICOS 
        df = pd.read_csv("hrdatatest.csv")
-       st.dataframe(df, height=300)
-       pyg_html = pyg.walk(df, return_html=True)
-       components.html(pyg_html, height=1000, scrolling=True)
+       
        
         
         
