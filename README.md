@@ -48,10 +48,10 @@ Python Version: 3.8 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 **Solving the following questions**
 ### What percentage of employees have been promoted?
 
-Only 8% of workers have been promoted (https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
+Only 8% of workers have been promoted ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
 
 ### Are promoted employees equally gendered?
-No, more men have been promoted than women (https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/gender%20and%20promotee.png)
+No, more men have been promoted than women ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/gender%20and%20promotee.png)
 
 !["Althought the number of trained female employees that passes is greater than that of men, this means that from a group of women and men, promotion in women is more effective."](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/ratio%20of%20promoted%20by%20gender.png)
 
