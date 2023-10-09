@@ -75,8 +75,8 @@ def run():
        #REALIZO LA PREDICCIÓN
         if st.button("Predecir"):
             #LLAMO AL ARCHIVO .PKL, 
-            nombreArchivo = 'ModelodePrediccion1.pkl'
-            modeloCargado = pickle.load(open('modelohr.pkl', 'rb'))
+            nombreArchivo = 'modelodepredictionppe.pkl'
+            modeloCargado = pickle.load(open('modelodepredictionppe.pkl', 'rb'))
             prediccion = modeloCargado.predict([input_dict])
             if  prediccion == 0:
                 st.write('El empleado no será promovido')
