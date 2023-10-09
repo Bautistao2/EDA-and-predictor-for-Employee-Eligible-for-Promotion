@@ -6,6 +6,8 @@ import pickle
 from pickle import dump
 import pygwalker as pyg
 import streamlit.components.v1 as components
+import sklearn 
+
 
 
 def run():
