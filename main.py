@@ -1,3 +1,4 @@
+from msilib.schema import Component
 import streamlit as st
 import pandas as pd
 import pickle 
@@ -7,7 +8,6 @@ import pygwalker as pyg
 import streamlit.components.v1 as components
 
 
-  
 def run():
     #IMPORTO IMAGENES QUE SERAN VISIBLES EN EL APP
     from PIL import Image
@@ -75,8 +75,8 @@ def run():
        #REALIZO LA PREDICCIÓN
         if st.button("Predecir"):
             #LLAMO AL ARCHIVO .PKL, 
-            nombreArchivo = 'modelodepredictionppe.pkl'
-            modeloCargado = pickle.load(open('modelodepredictionppe.pkl', 'rb'))
+            nombreArchivo = 'modelpredictionppe.pkl'
+            modeloCargado = pickle.load(open('modelpredictionppe.pkl', 'rb'))
             prediccion = modeloCargado.predict([input_dict])
             if  prediccion == 0:
                 st.write('El empleado no será promovido')
