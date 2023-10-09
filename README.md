@@ -1,6 +1,5 @@
 # Potencial Promote Employee  APP (P.P.E)
 
-
 HR analytics is revolutionising the way human resources departments operate, leading to higher efficiency and better results overall. Human resources has been using analytics for years. However, the collection, processing and analysis of data has been largely manual, and given the nature of human resources dynamics and HR KPIs, the approach has been constraining HR. Therefore, it is surprising that HR departments woke up to the utility of machine learning so late in the game. Here is an opportunity to try predictive analytics in identifying the employees most likely to get promoted through the use of an APP that, by entering some information, predicts whether an employee will be promoted or not.
 
 ## Description
@@ -42,7 +41,6 @@ Python Version: 3.8 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 - Split the data into training and testing with optional portion
 - Build the models with matching hyperparameter tune, choose the best model
 - Encoded all categorical features
-
 ## 2. Exploratory Data Analysis:
 
 **Solving the following questions**
@@ -56,7 +54,6 @@ Althought the number of trained female employees that passes is greater than tha
 
 ### Regarding recruitment channels, which channel provides the greatest number of promoted employees?
 Source "Other" provides a greater number of promoted employees.![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/RecruitmentChannelvsPromotee.png)
-
 
 ### Does the age of promoted employees have the same trend for both men and women?
 Employees between 26 and 39 are more likely to be promoted than other ages, both men and women.![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/Ageandpromoted.png)
@@ -76,7 +73,6 @@ Yes, employees with performance scores of 3 and 5 are mostly promoted.![](https:
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore2.png)
 
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/PerformanceScore3.png)
-
 ## 3. Build and training prediction model
 I made the prediction model to know which employee will be promoted,, based on features of the employee, after having analyzed the data and the confusion matrix.
 
@@ -90,18 +86,13 @@ To do this I follow the usual steps:
 - "Is promoted" is the target vector to the prediction model
 - Split the data into training and testing subsets
 ### Build a model
-
 - Exploring model performance of different ML clasification algorithms
 - The metric used to decide the best algorithm was accuracy.
 - The most promising algorithm () was adjusted.
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/RandonForestClModel.png)
-
 ### Training Model
-
 - The characteristics that have the greatest impact on the prediction were calculated.
-
 ![](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/FeaturesModel.png)
-
 ### 4. Insights
 
 - Regarding the recruitment channel, the recruitment channel that contributes the least promotions is    the  one in which company employees refer their acquaintances, with 3% of the total promotions, on the o other hand, using external companies has contributed close to 42% of promoted employees, while other types of recruitment such as internet pages have contributed 55% of the promotions, in conclusion hiring through referrals and external companies should be reduced and the search for candidates through internet pages that present more skills should be increased.
