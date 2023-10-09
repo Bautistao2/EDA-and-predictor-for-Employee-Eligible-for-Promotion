@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle 
-import pickle
 from pickle import dump
 import streamlit.components.v1 as components
 from sklearn.ensemble import RandomForestClassifier
@@ -87,13 +86,8 @@ def run():
               
     #SI EL USUARIO HA ESCOGIDO LA OPCION DE IR A GRAFICOS, SE AÑADE LA LIBRERIA QUE PERMITE REALIZAR GRAFICOS
     #CON LA INFO DEL DATASET
-    if add_selectbox == 'Ir a gráficos':
-       #VISUALIZO EL DATASET, PRIMERO, LUEGO REALIZO GRAFICOS 
-       df = pd.read_csv("hrdatatest.csv")
+    
        
-       
-        
-        
 if __name__ == '__main__':
     run() 
       
