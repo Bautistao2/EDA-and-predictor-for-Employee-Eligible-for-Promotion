@@ -1,5 +1,3 @@
-
-from msilib.schema import Component
 import streamlit as st
 import pandas as pd
 import pickle 
