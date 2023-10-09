@@ -48,7 +48,7 @@ Python Version: 3.8 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 **Solving the following questions**
 ### What percentage of employees have been promoted?
 
-[only 8% of workers have been promoted](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
+[](only 8% of workers have been promoted https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/promotee%20employess.png)
 
 ### Are promoted employees equally gendered?
 !["No, more men have been promoted than women"](https://github.com/Bautistao2/Potential-employee-promoted-APP/blob/main/images/gender%20and%20promotee.png)
@@ -134,13 +134,9 @@ To do this I follow the usual steps:
 
 ### 6. Dashboard POWER BI
 
-
-To view click on the following link:
-
 ![](https://github.com/Bautistao2/Potential-employee-promoted-Predictor-EDA-and-APP/blob/main/images/Screen%20Dashboard%20Power%20BI.png)
 
-
-[To view click ](https://app.powerbi.com/view?r=eyJrIjoiNmMyMDljZWMtYmRhYy00NGE4LWEyODctZGY1NDYyYjRmMDA1IiwidCI6IjMzNTQwNzQ2LTViYmMtNDRlOS04MDBmLTRjOGQ1MTJkNjQ1YyIsImMiOjl9&pageName=ReportSection)
+[To view click ](https://app.powerbi.com/view?r=eyJrIjoiNmMyMDljZWMtYmRhYy00NGE4LWEyODctZGY1NDYyYjRmMDA1IiwidCI6IjMzNTQwNzQ2LTViYmMtNDRlOS04MDBmLTRjOGQ1MTJkNjQ1YyIsImMiOjl9)
 
 
 
