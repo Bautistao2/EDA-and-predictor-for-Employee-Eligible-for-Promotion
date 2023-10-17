@@ -1,6 +1,6 @@
 # Employee Elegible for Promotion  APP (E.E.P)
 
-HR analytics is revolutionising the way human resources departments operate, leading to higher efficiency and better results overall. Human resources has been using analytics for years. However, the collection, processing and analysis of data has been largely manual, and given the nature of human resources dynamics and HR KPIs, the approach has been constraining HR. Therefore, it is surprising that HR departments woke up to the utility of machine learning so late in the game. Here is an opportunity to try predictive analytics in identifying the employees most likely to get promoted through the use of an APP that, by entering some information, predicts whether an employee will be promoted or not.
+HR analytics is revolutionising the way human resources departments operate, leading to higher efficiency and better results overall. Human resources has been using analytics for years; however, the collection, processing, and analysis of data has been largely manual. Given the nature of human resources dynamics and HR KPIs, the manual approach has been constraining HR. Therefore, it is surprising that HR departments opened up to the utility of machine learning so late in the game. Here is an opportunity to use predictive analytics in identifying the employees most likely to be promoted through the use of an app fed with the relevant HR information.
 
 ## Description
 
@@ -36,11 +36,40 @@ Python Version: 3.8 Packages: pandas, numpy, datetime, scipy, sklearn, matplotli
 
 - Null values were handled located in the level of education and performance score columns
 - Column labels were renamed for ease of understanding the information.
-- Exploratory analysis from the data, create some charts to describe and analyze the data
-- Describe the pre-processing step, how to extract and create new features, also the reason behind them
+- Exploratory analysis from the data, create sThe client is a large MNC with 9 broad verticals across the organisation. The client faces a challenge in identifying the right people for promotion and preparing them in time. Under the current process, the final promotions are only announced after a first round of training and evaluation; and this leads to delay in employees’ transition to their new roles. Hence, the company needs help in identifying the best candidates at an earlier juncture, in order to expedite the entire promotion cycle.
+
+The company has provided the following employee datasets:
+
+- **Emp_ID:** Unique ID for each employee
+- **Department:** The department in which the employee works
+- **No of Region:** Region of employment (unordered)
+- **Level of Education:** Education Level
+- **Gender:** Gender of employee
+- **Recruitment_channel:** Channel through which employee was recruited
+- **No_of_trainings_completed:** Number of other training sessions completed in previous year on soft skills, technical skills, etc.; but after which promotion did not occur.
+- **Age:** Age of employee
+- **Performance score:** Employee rating for the previous year
+- **Length_of_service:** Length of service (in years)
+- **High KPIS:** If percentage of KPIs > 80%, then 1; else 0.
+- **Awards won:** If awards won during previous year, then 1; else 0.
+- **Average score evaluation:** Average score in current training evaluations
+- **Is_promoted:** Employee was actually promoted (this is our target variable). 1 if promoted; else 0.
+
+
+## Code and Resources Used
+
+Python Version: 3.8 Packages: pandas, numpy, datetime, scipy, sklearn, matplotlib, seaborn
+
+## 1. Data cleaning and feature engineering:
+
+- The “level of education” and “performance score” columns contained null values, which were addressed.
+- Column labels were renamed for ease of understanding.
+- Exploratory analysis was performed on the data, creating several charts to visualize the important trends.
+- Extract and create new features, also the reason behind them
 - Split the data into training and testing with optional portion
 - Build the models with matching hyperparameter tune, choose the best model
 - Encoded all categorical features
+
 ## 2. Exploratory Data Analysis:
 
 **Solving the following questions**
