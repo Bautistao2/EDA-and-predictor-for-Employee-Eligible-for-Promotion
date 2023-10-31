@@ -92,7 +92,7 @@ I built the model to predict which employees are likely to be promoted, based on
 
 ### 4. Insights
 
-- - The employees who were recruited via referrals from existing employees were the least often promoted, with 3% of the total promotions. Conversely, almost 42% of promoted employees were sourced via an external company. Other recruitment channels, such as internet sites, contributed 55% of the employees who were promoted. 
+- The employees who were recruited via referrals from existing employees were the least often promoted, with 3% of the total promotions. Conversely, almost 42% of promoted employees were sourced via an external company. Other recruitment channels, such as internet sites, contributed 55% of the employees who were promoted. 
 
 - At least 95% percent of promoted employees have had no more than two training sessions without promotion, and this applies for employees from all 3 hiring streams. Thus, employees who have failed only one or two training sessions should be preferred; more than two are not potentially promotable. 
 
