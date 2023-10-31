@@ -111,7 +111,23 @@ I built the model to predict which employees are likely to be promoted, based on
 - From the correlation matrix, it can be concluded that the employee characteristics most relevant to promotion are:
 - Performance score, high KPIs, length of service, age, number of previous training sessions completed without promotion, and recruitment channel.
 
-### 5. APP 
+### 5.Recommendations
+
+Having identified the employee characteristics most correlated with promotion, the following recommendations are made to help the firm best select employees to train, and to reduce unsuccessful promotion attempts:
+
+1. Prioritize employees who have been hired via the “other” recruitment stream and via external sourcing channels – as opposed to employee referrals – since at least 97% of the total promoted employees come from those sources.
+
+2. Select employees who have no more than two completed trainings without promotion, since the percentage of promoted employees with more than 2 unsatisfactory completed trainings is less than 3%.
+
+3. Not considering employee age to be a criteria of interest for promotion, as successfully promoted employees are currently drawn from all age brackets.
+
+4. Choosing only employees who have performance scores of 3, 4 and 5 could be useful, since this not only selects for higher-performing employees, but also provides motivation for employees to achieve these performance scores.
+
+5. Although the percentage of promoted workers who only have a bachelor’s degree is much higher than those who have a master’s degree, the two educational levels should be considered equally eligible, since this differential is likely explained by the relatively fewer number of total master’s degrees among the total population.
+
+6. The company should carefully evaluate the criteria for employee awards to ensure that these align with promotion criteria. Currently employees with no awards make up 88% of promoted employees. The purpose of employee awards should be both to motivate and signal good performance in general.
+
+### 6. APP 
 
 - The application in streamlit predicts upon the introduction of certain employee information by the user or worker of the human resources department, whether an employee will be promoted or not, and in turn, it is possible for the user to make different graphs in order to analyze information in a more interactive way.
 - On the left side [1] of the application the user will have the option to choose what they want to do, whether to make the prediction directly, or go to graphs, which is to view the history of promotions and create, for example, bar diagrams that allow analyzing information quickly.
@@ -122,6 +138,7 @@ I built the model to predict which employees are likely to be promoted, based on
 
 [To view click ](https://app.powerbi.com/view?r=eyJrIjoiNmMyMDljZWMtYmRhYy00NGE4LWEyODctZGY1NDYyYjRmMDA1IiwidCI6IjMzNTQwNzQ2LTViYmMtNDRlOS04MDBmLTRjOGQ1MTJkNjQ1YyIsImMiOjl9)
 ![](https://github.com/Bautistao2/Potential-employee-promoted-Predictor-EDA-and-APP/blob/main/images/Screen%20Dashboard%20Power%20BI.png)
+
 
 
 
