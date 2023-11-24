@@ -3,12 +3,13 @@ import pandas as pd
 import pickle 
 from pickle import dump
 import streamlit.components.v1 as components
+from streamlit_option_menu import option_menu
 from sklearn.ensemble import RandomForestClassifier
 
 
 
 def run():
-    #IMPORTO IMAGENES QUE SERAN VISIBLES EN EL APP
+    #Import Images
     from PIL import Image
     imagen1 = Image.open('./images/hrana.png')
     imagen2 = Image.open('./images/hr2.jpg')
@@ -16,18 +17,20 @@ def run():
 
     st.image(imagen2,use_column_width=False)
 
-    #AÑADO UN SELETBOX PARA QUE EL USUARIO ELIGA ENTRE GRAFICAR O HACER LA PREDICCION
-    add_selectbox = st.sidebar.selectbox(
-    "Escoge una opción",
-    ("Realizar la predicción", "Ir a gráficos"))
-
+ 
+    #Main Menu
+    st.sidebar.image(imagen1)
+    with st.sidebar:
+        add_selectbox = option_menu("Select an Option",["Realizar la predicción","Analyze The Data","Ir a gráficos", ],
+             icons=['house', 'search',"house"], menu_icon="menu-down", default_index=1)                       
+    
     st.sidebar.info('Apreciado usuario, puede saber si un empleado será promovido, o hacer graficos')
         
-    st.sidebar.image(imagen1)
-
-    st.title("PEAPP, Promoción Efectiva para sus empleados")
     
-    #SI EL USUARIO ELIGE REALIZAR LA PREDICCION, AQUÍ SE RECOGEN LAS VARIABLES
+
+    st.title("Predictor of Employee Elegible to Promotion")
+    
+    #Input the information of the employee or variables
     if add_selectbox == 'Realizar la predicción':
         
         st.write('A continuación deberá ingresar la información de su empleado')
@@ -67,13 +70,13 @@ def run():
 
         output=""
         
-      #CREO UNA LISTA CON TODAS LAS VARIABLES O INFO RECOGIDAS  ANTERIORMENTE POR EL USUARIO , DEL EMPLEADO
+      #Create a List with the variables 
         input_dict = [department1 , region , educacion,  sexo, reclutamiento,  numerodeentrenamientos,  Edad,  Entrenamientos_previos,  servicio,  KIPs_met,  awards_won ,  Avg_training_score]
         
         
-       #REALIZO LA PREDICCIÓN
+       #Make the prediction
         if st.button("Predecir"):
-            #LLAMO AL ARCHIVO .PKL, 
+            #Import model file .PKL, 
             nombreArchivo = 'modelpredictionppe.pkl'
             modeloCargado = pickle.load(open('modelpredictionppe.pkl', 'rb'))
             prediccion = modeloCargado.predict([input_dict])
@@ -84,9 +87,26 @@ def run():
             st.write('llamar al empleado para comunicarselo')     
                  
               
-    #SI EL USUARIO HA ESCOGIDO LA OPCION DE IR A GRAFICOS, SE AÑADE LA LIBRERIA QUE PERMITE REALIZAR GRAFICOS
-    #CON LA INFO DEL DATASET
     
+    
+    if add_selectbox == 'Analyze The Data':
+        import pandas as pd
+        from ydata_profiling import ProfileReport
+        import matplotlib 
+        import matplotlib.backends.backend_tkagg
+        from streamlit_pandas_profiling import st_profile_report 
+        
+        
+        df = pd.read_csv("hrdata.csv")
+        df.education = df.education.fillna("Bachelor's")
+        df.previous_year_rating = df.previous_year_rating.fillna(3.0)
+        df= df.rename(columns={'employee_id':'Emp_ID', 'department':'Department','region':'No_of_Region','education':'Level_of_education','gender':'Gender','recruitment_channel':'Recruitment_channel','no_of_trainings' :'No_of_other_trainings_completed','age':'Age','previous_year_rating':'Performance_Score', 'length_of_service':'Length_of_service','KPIs_met >80%':'High_KPIS','awards_won?':'Awards_won','avg_training_score':'Average_score_evaluations' })
+        
+        st.write("## Analyze the Data:") 
+        profile = ProfileReport(df,  title="Profiling Report")
+        st_profile_report(profile) 
+        
+        
        
 if __name__ == '__main__':
     run() 
