@@ -21,8 +21,8 @@ def run():
     #Main Menu
     st.sidebar.image(imagen1)
     with st.sidebar:
-        add_selectbox = option_menu("Select an Option",["Realizar la predicción","Analyze The Data","Ir a gráficos", ],
-             icons=['house', 'search',"house"], menu_icon="menu-down", default_index=1)                       
+        add_selectbox = option_menu("Select an Option",["Realizar la predicción","Analyze The Data"],
+             icons=['house', 'search'], menu_icon="menu-down", default_index=1)                       
     
     
         
@@ -34,8 +34,32 @@ def run():
     if add_selectbox == 'Realizar la predicción':
         
         st.write('Next, you will need to enter the employee information')
-        department1 = st.slider('Select the Department, 0.Analitics, 1.Finanzas, 2.HR, 3.Legal, 4.Operaciones, 5.Compra, 6.RyD, 7.VentasYMarketing, 8.tecnología', 0,8,1)
+        
+        #Department
+        department1 = st.selectbox('Select the Department',['Analytics', 'Finance', 'HR', 'Legal', 'Operations', 'Procurement', 'RyD', 'Sales & Marketing','Technology'])
+        if department1 == 'Analytics':
+            department1 = 0
+        if department1 == 'Finance':
+            department1 = 1
+        if department1 == 'HR':
+            department1 = 2
+        if department1 == 'Legal':
+            department1 = 3
+        if department1 == 'Operations':
+            department1 = 4
+        if department1 == 'Procurement':              
+            department1 = 5
+        if department1 == 'RyD':
+            department1 =6
+        if department1 == 'Sales & Marketing':
+            department = 7
+        if department1 == 'Technology':
+            department1 = 8     
+                   
+        #Age
         Edad = st.number_input('Age', min_value=1, max_value=100, value=25)
+        
+        #Gender
         st.write('Gender')
         mujer =  st.checkbox ("Female")
         hombre =  st.checkbox ("Male")
@@ -43,7 +67,8 @@ def run():
             sexo = 0
         else :
             sexo = 1     
-                   
+        
+        #Education      
         educacion = st.selectbox('Level of Education',['Bachelor','Specialist','Master'])
         if educacion == 'Bachelor':
               educacion = 0
@@ -57,28 +82,34 @@ def run():
         elif reclutamiento =='Referred':
               reclutamiento = 1
         elif reclutamiento == 'Sourcing':
-              reclutamiento = 2           
-        
+              reclutamiento = 2 
+                        
+        #Number of trainings Completed
         numerodeentrenamientos = st.selectbox('No of trainings completed', [0,1,2,3,4,5])
+        
+        #Performance Score
         Entrenamientos_previos = st.selectbox('Performance Score', [0,1,2,3,4,5])
+        
+        #Lenght of Service
         servicio = st.number_input('Lenght of Service', min_value=1, max_value=37, value=25)
         
+        #Have HPIS?
         if st.checkbox('Have KPIS>80%? '):
             KIPs_met = 0
                
         else:
             KIPs_met = 1
                 
-        
+        #Have Award Won?
         if st.checkbox('Award Won?'):
             awards_won = 0
         else:
             awards_won = 1
             
-                   
+        #Average Score           
         Avg_training_score = st.number_input('Average score in current training evaluations', min_value=1, max_value=100, value=25)
     
-        
+        #Region where employee works
         region = st.number_input('Region', min_value=1, max_value=35, value=25)
 
         output=""
@@ -101,7 +132,7 @@ def run():
                  
               
     
-    
+    #Analyze and Data Visualization
     if add_selectbox == 'Analyze The Data':
         import pandas as pd
         from ydata_profiling import ProfileReport
