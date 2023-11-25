@@ -51,7 +51,14 @@ def run():
               educacion = 1
         elif educacion == 'Master':
               educacion = 2      
-        reclutamiento = st.slider('Recruitment Source: 2.Sourcing, 1.Referred, 0.Other', 0,2,1)
+        reclutamiento = st.selectbox('Recruitment Source',['Sourcing','Referred','Other'])
+        if reclutamiento == 'Other':
+              reclutamiento = 0
+        elif reclutamiento =='Referred':
+              reclutamiento = 1
+        elif reclutamiento == 'Sourcing':
+              reclutamiento = 2           
+        
         numerodeentrenamientos = st.selectbox('No of trainings completed', [0,1,2,3,4,5])
         Entrenamientos_previos = st.selectbox('Performance Score', [0,1,2,3,4,5])
         servicio = st.number_input('Lenght of Service', min_value=1, max_value=37, value=25)
