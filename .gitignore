@@ -1,5 +1,35 @@
-venv/
+# Python
 __pycache__/
+<<<<<<< HEAD
+*.py[cod]
+*.pyo
+*.so
+
+# Virtual environments
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Secrets
+*.env
+
+# Streamlit cache
+.streamlit/
+=======
 streamlit_ppe/
+<<<<<<< Updated upstream
 /.gitignore/
 .ipynb_checkpoints/
+=======
+.gitignore
+>>>>>>> Stashed changes
+>>>>>>> origin/Develop
