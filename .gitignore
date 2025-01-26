@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+<<<<<<< HEAD
 *.py[cod]
 *.pyo
 *.so
@@ -23,3 +24,12 @@ Thumbs.db
 
 # Streamlit cache
 .streamlit/
+=======
+streamlit_ppe/
+<<<<<<< Updated upstream
+/.gitignore/
+.ipynb_checkpoints/
+=======
+.gitignore
+>>>>>>> Stashed changes
+>>>>>>> origin/Develop
