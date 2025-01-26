@@ -37,15 +37,13 @@ EDA-and-predictor-for-Employee-Eligible-for-Promotion/
 │   ├── hrdatatest.csv        # Test dataset
 │   └── predictions_hrdatatest.csv # Predictions output
 ├── models/                   # Trained models and scalers
-│   ├── xgboost_model.pkl
+│   ├── model.py
 │   ├── xgboost_model_smote.pkl
 │   └── scaler.pkl
 ├── scripts/                  # Scripts for each step of the pipeline
 │   ├── data_preprocessing.py # Data preprocessing and cleaning
-│   ├── eda.py                # Exploratory Data Analysis
-│   ├── model_training.py     # Model training with SMOTE
+│   ├── Exploratory_Data_Analysis.py  # Exploratory Data Analysis
 │   ├── predict.py            # Predictions on new data
-│   └── train_with_selected_features.py # Training with selected features
 ├── README.md                 # Project documentation
 └── requirements.txt          # Python dependencies
 ```
@@ -73,11 +71,7 @@ EDA-and-predictor-for-Employee-Eligible-for-Promotion/
 - Used **XGBoost** for classification.
 - Addressed class imbalance with **SMOTE**.
 - Trained the model with the full feature set and improved its precision and recall by balancing classes using **SMOTE**:
-  - **Accuracy:** 97%.
-  - **Class `1` (Promoted):**
-    - **Recall:** 94%.
-    - **Precision:** 99%.
-    - **F1-Score:** 96%.
+
 
 ### 🔹 **4. Predictions**
 - Deployed a script to predict promotions on new datasets.
@@ -88,12 +82,11 @@ EDA-and-predictor-for-Employee-Eligible-for-Promotion/
 ## 📊 **Model Metrics**
 
 ### **Model with Full Features**
-- **Accuracy:** 94.17%
-- **Class `1` (Promoted):**
-  - **Recall:** 35%
-  - **Precision:** 87%
-  - **F1-Score:** 50%
-
+  - **Accuracy:** 97%.
+  - **Class `1` (Promoted):**
+    - **Recall:** 94%.
+    - **Precision:** 99%.
+    - **F1-Score:** 96%.
 ---
 
 ## ⚙️ **How to Run the Project**
@@ -112,20 +105,15 @@ EDA-and-predictor-for-Employee-Eligible-for-Promotion/
 
 3. **Perform EDA:**
    ```bash
-   python scripts/eda.py
+   python scripts/Exploratory_Data_Analysis.py
    ```
 
 4. **Train the model:**
    ```bash
-   python scripts/model_training.py
+   python models/model_py
    ```
 
-5. **Train with selected features:**
-   ```bash
-   python scripts/train_with_selected_features.py
-   ```
-
-6. **Make predictions:**
+5. **Make predictions:**
    ```bash
    python scripts/predict.py
    ```
