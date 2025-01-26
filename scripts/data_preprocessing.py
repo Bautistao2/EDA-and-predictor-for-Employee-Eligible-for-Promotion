@@ -2,7 +2,11 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.impute import SimpleImputer
 
-def preprocess_data(input_path, output_path):
+def preprocess_data():
+    # Define the input and output file paths
+    input_path = 'data/HRData.csv'  # Path to the raw dataset
+    output_path = 'data/HRData_cleaned.csv'  # Path to save the cleaned dataset
+
     # Load the dataset
     df = pd.read_csv(input_path)
     
@@ -23,4 +27,4 @@ def preprocess_data(input_path, output_path):
     print(f"Data preprocessing completed. Cleaned data saved to '{output_path}'.")
 
 if __name__ == "__main__":
-    preprocess_data('data/HRData.csv', 'data/HRData_cleaned.csv')
+    preprocess_data()
