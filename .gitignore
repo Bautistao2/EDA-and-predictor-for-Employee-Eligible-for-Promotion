@@ -1,9 +1,25 @@
-venv/
+# Python
 __pycache__/
-streamlit_ppe/
-<<<<<<< Updated upstream
-/.gitignore/
+*.py[cod]
+*.pyo
+*.so
+
+# Virtual environments
+venv/
+env/
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-=======
-.gitignore
->>>>>>> Stashed changes
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Secrets
+*.env
+
+# Streamlit cache
+.streamlit/
